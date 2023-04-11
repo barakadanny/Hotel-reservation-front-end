@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
+import Nav from './components/shared/Nav';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='text-red-500'>Hello from app</h1>
+    <div>
+      <Nav/>
+      <Home />
     </div>
   );
 }
