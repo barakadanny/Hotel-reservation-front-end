@@ -49,7 +49,7 @@ function Hero() {
             
             <article className='relative overflow-hidden'>
                 <img src={HeroImg} className="w-full" alt="" />
-                <div className='absolute bottom-4 left-4 w-full overflow-x-scroll'>
+                <div className='absolute bottom-4 left-4 w-full overflow-x-scroll scrollbar-hide md:scrollbar-default'>
                     <ul className='flex flex-row w-max gap-3'>
                     <li className='w-[25rem] h-20 bg-red-400'></li>
                         <li className='w-[25rem] h-20 bg-orange-400'></li>
