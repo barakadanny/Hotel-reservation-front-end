@@ -25,7 +25,8 @@ function Nav() {
         };
       }, [showShadow]);
   return (
-    <header className={`${showShadow ? 'drop-shadow-md' : ''} bg-opacity-30z-30 bg-[#101212] fixed left-0 right-0 z-30`}>
+    <header className={`${showShadow ? 'drop-shadow-md' : ''} bg-opacity-30z-30 bg-transparent fixed left-0 right-0 z-30`}>
+    {/* <header className={`${showShadow ? 'drop-shadow-md' : ''} bg-opacity-30z-30 bg-[#101212] fixed left-0 right-0 z-30`}> */}
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16 lg:h-20">
                 <div className="flex-shrink-0">
