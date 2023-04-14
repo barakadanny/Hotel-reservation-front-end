@@ -1,45 +1,67 @@
 import React from 'react'
 import HeroImg from '../../imgs/hero.png';
 
+import tripadvisor from '../../imgs/tripadvisor.png';
+import traveloka from '../../imgs/traveloka.png';
+import tiketo from '../../imgs/tiketo.png';
+import airbnb from '../../imgs/airbnb.png';
+
 function Hero() {
-    const stroke = {
-        textShadow: "-1px -1px 0 black,1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;"
-    };
   return (
-    <div class="bg-gradient-to-b w-full bg-red-200">
-
-        <section class="py-10 sm:py-16 lg:py-24">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-                    <div className='mt-16'>
-                        <h1 class="text-4xl font-bold text-black ">
-                            find the place to <br /> live 
-                            <span class="text-white" style={stroke}> your dreams </span> <br/>
-                            easily here
-                        </h1>
-
-                        <p class="mt-8 text-base text-black sm:text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
-
-                        <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
-                            <a href="#" title="" class="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 hover:bg-orange-600 focus:bg-orange-600" role="button"> Start exploring </a>
-
-                            <a href="#" title="" class="inline-flex items-center mt-6 text-base font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80">
-                                <svg class="w-10 h-10 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path fill="#F97316" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                Watch video
-                            </a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <img class="w-full object-center rounded-bl-[5rem]" src={HeroImg} alt="" />
-                    </div>
+    <section className='bg-green-400'>
+        <div className='relative w-full'>
+            {/* left side */}
+            <article>
+                <h1>find the place to live your dreams easily here</h1>
+                <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
+                <div className='relative w-[25rem] lg:w-[30rem] inline-flex items-center mt-8'>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Location, Hotel"
+                        className="block w-full px-4 py-4 bg-white text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-full caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 drop-shadow-xl"
+                        required
+                    />
+                    <button type="submit" className="absolute text-sm top-1 right-1 items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-200 bg-blue-700 border border-transparent rounded-full hover:bg-blue-800 focus:bg-blue-800">
+                        Search
+                    </button>
                 </div>
-            </div>
-        </section>
-    </div>
+                <article>
+                    <p>Our Partners</p>
+                    <ul>
+                        <li>
+                            <img src={tripadvisor} alt="tripadvisor" />
+                        </li>
+                        <li>
+                            <img src={traveloka} alt="traveloka" />
+                        </li>
+                        <li>
+                            <img src={tiketo} alt="tiketo" />
+                        </li>
+                        <li>
+                            <img src={airbnb} alt="airbnb" />
+                        </li>
+                    </ul>
+                </article>
+            </article>
+            {/* right side */}
+            <article className='relative overflow-hidden w-full'>
+                <img src={HeroImg} className="w-full" alt="" />
+                <div className='absolute bottom-4 left-4 overflow-x-scroll max-w-max'>
+                    <ul className='flex flex-row gap-3 max-w-max'>
+                        <li className='w-[25rem] h-20 bg-red-400'></li>
+                        <li className='w-[25rem] h-20 bg-orange-400'></li>
+                        <li className='w-[25rem] h-20 bg-yellow-400'></li>
+                        <li className='w-[25rem] h-20 bg-green-400'></li>
+                        <li className='w-[25rem] h-20 bg-blue-400'></li>
+                        <li className='w-[25rem] h-20 bg-indigo-400'></li>
+                        <li className='w-[25rem] h-20 bg-purple-400'></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
 
   )
 }
