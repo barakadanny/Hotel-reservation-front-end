@@ -7,6 +7,10 @@ import tiketo from '../../imgs/tiketo.png';
 import airbnb from '../../imgs/airbnb.png';
 
 function Hero() {
+    const liStyle = {
+        width: '25rem',
+        height: '15rem'
+    };
   return (
     <section className='bg-green-400'>
         <div className='relative w-full'>
@@ -14,7 +18,7 @@ function Hero() {
             <article>
                 <h1>find the place to live your dreams easily here</h1>
                 <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
-                <div className='relative w-[25rem] lg:w-[30rem] inline-flex items-center mt-8'>
+                <div className='relative w-full inline-flex items-center mt-8'>
                     <input
                         type="email"
                         name="email"
@@ -46,11 +50,25 @@ function Hero() {
                 </article>
             </article>
             {/* right side */}
-            <article className='relative overflow-hidden w-full'>
+            {/* <article className='relative overflow-hidden w-full'>
                 <img src={HeroImg} className="w-full" alt="" />
                 <div className='absolute bottom-4 left-4 overflow-x-scroll max-w-max'>
                     <ul className='flex flex-row gap-3 max-w-max'>
                         <li className='w-[25rem] h-20 bg-red-400'></li>
+                        <li className='w-[25rem] h-20 bg-orange-400'></li>
+                        <li className='w-[25rem] h-20 bg-yellow-400'></li>
+                        <li className='w-[25rem] h-20 bg-green-400'></li>
+                        <li className='w-[25rem] h-20 bg-blue-400'></li>
+                        <li className='w-[25rem] h-20 bg-indigo-400'></li>
+                        <li className='w-[25rem] h-20 bg-purple-400'></li>
+                    </ul>
+                </div>
+            </article> */}
+            <article className='relative overflow-hidden'>
+                <img src={HeroImg} className="w-full" alt="" />
+                <div className='absolute bottom-4 left-4 w-full overflow-x-scroll'>
+                    <ul className='flex flex-row w-max gap-3'>
+                    <li className='w-[25rem] h-20 bg-red-400'></li>
                         <li className='w-[25rem] h-20 bg-orange-400'></li>
                         <li className='w-[25rem] h-20 bg-yellow-400'></li>
                         <li className='w-[25rem] h-20 bg-green-400'></li>
