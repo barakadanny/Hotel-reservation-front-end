@@ -46,20 +46,7 @@ function Hero() {
                 </article>
             </article>
             {/* right side */}
-            {/* <article className='relative overflow-hidden w-full'>
-                <img src={HeroImg} className="w-full" alt="" />
-                <div className='absolute bottom-4 left-4 overflow-x-scroll max-w-max'>
-                    <ul className='flex flex-row gap-3 max-w-max'>
-                        <li className='w-[25rem] h-20 bg-red-400'></li>
-                        <li className='w-[25rem] h-20 bg-orange-400'></li>
-                        <li className='w-[25rem] h-20 bg-yellow-400'></li>
-                        <li className='w-[25rem] h-20 bg-green-400'></li>
-                        <li className='w-[25rem] h-20 bg-blue-400'></li>
-                        <li className='w-[25rem] h-20 bg-indigo-400'></li>
-                        <li className='w-[25rem] h-20 bg-purple-400'></li>
-                    </ul>
-                </div>
-            </article> */}
+            
             <article className='relative overflow-hidden'>
                 <img src={HeroImg} className="w-full" alt="" />
                 <div className='absolute bottom-4 left-4 w-full overflow-x-scroll'>
