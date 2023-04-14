@@ -7,10 +7,6 @@ import tiketo from '../../imgs/tiketo.png';
 import airbnb from '../../imgs/airbnb.png';
 
 function Hero() {
-    const liStyle = {
-        width: '25rem',
-        height: '15rem'
-    };
   return (
     <section className='bg-green-400'>
         <div className='relative w-full'>
