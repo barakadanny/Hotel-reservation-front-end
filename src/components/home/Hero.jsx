@@ -1,10 +1,15 @@
 import React from 'react'
 import HeroImg from '../../imgs/hero.png';
 
+// partners
 import tripadvisor from '../../imgs/tripadvisor.png';
 import traveloka from '../../imgs/traveloka.png';
 import tiketo from '../../imgs/tiketo.png';
 import airbnb from '../../imgs/airbnb.png';
+
+// Profiles imgs
+import Insight from './Insight';
+import profile1 from '../../imgs/profile/profile1.jpg'
 
 function Hero() {
   return (
@@ -51,13 +56,7 @@ function Hero() {
                 <img src={HeroImg} className="w-full" alt="" />
                 <div className='absolute bottom-4 left-4 w-full overflow-x-scroll scrollbar-hide md:scrollbar-default'>
                     <ul className='flex flex-row w-max gap-3'>
-                    <li className='w-[25rem] h-20 bg-red-400'></li>
-                        <li className='w-[25rem] h-20 bg-orange-400'></li>
-                        <li className='w-[25rem] h-20 bg-yellow-400'></li>
-                        <li className='w-[25rem] h-20 bg-green-400'></li>
-                        <li className='w-[25rem] h-20 bg-blue-400'></li>
-                        <li className='w-[25rem] h-20 bg-indigo-400'></li>
-                        <li className='w-[25rem] h-20 bg-purple-400'></li>
+                        <Insight/>
                     </ul>
                 </div>
             </article>
