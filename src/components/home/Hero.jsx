@@ -9,7 +9,10 @@ import airbnb from '../../imgs/airbnb.png';
 
 // Profiles imgs
 import Insight from './Insight';
-// import profile1 from '../../imgs/profile/profile1.jpg'
+import profile1 from '../../imgs/profile/profile1.jpg'
+import profile2 from '../../imgs/profile/profile2.jpg'
+import profile3 from '../../imgs/profile/profile3.jpg'
+import profile4 from '../../imgs/profile/profile4.jpg'
 
 function Hero() {
   return (
@@ -56,7 +59,9 @@ function Hero() {
                 <img src={HeroImg} className="w-full" alt="" />
                 <div className='absolute bottom-4 left-4 w-full overflow-x-scroll scrollbar-hide md:scrollbar-default'>
                     <ul className='flex flex-row w-max gap-3'>
-                        <Insight/>
+                        <Insight imageObj={[profile1, profile2, profile3]} styleClasses='w-10 h-10 border-[0.2rem] border-white rounded-full' metricsText='1K+ people' spanText='Successfully Getting Homes'  />
+                        <Insight imageObj={[profile3]} styleClasses='w-10 h-10 border-[0.2rem] border-white rounded-full' metricsText='1K+ people' spanText='Successfully Getting Homes'  />
+                        <Insight imageObj={[profile4]} styleClasses='w-10 h-10 border-[0.2rem] border-white rounded-full' metricsText='1K+ people' spanText='Successfully Getting Homes'  />
                     </ul>
                 </div>
             </article>
