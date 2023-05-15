@@ -9,7 +9,7 @@ import airbnb from '../../imgs/airbnb.png';
 
 // Profiles imgs
 import Insight from './Insight';
-import profile1 from '../../imgs/profile/profile1.jpg'
+// import profile1 from '../../imgs/profile/profile1.jpg'
 
 function Hero() {
   return (
