@@ -57,7 +57,7 @@ function Hero() {
             
             <article className='relative overflow-hidden'>
                 <img src={HeroImg} className="w-full" alt="" />
-                <div className='absolute bottom-4 left-4 w-full overflow-x-scroll scrollbar-hide md:scrollbar-default'>
+                <div className='absolute bottom-4 left-4 w-full overflow-x-scroll scrollbar-hide md:scrollbar-default pr-8'>
                     <ul className='flex flex-row w-max gap-3'>
                         <Insight imageObj={[profile1, profile2, profile3]} styleClasses='w-10 h-10 border-[0.2rem] border-white rounded-full' metricsText='1K+ people' spanText='Successfully Getting Homes'  />
                         <Insight imageObj={[profile3]} styleClasses='w-10 h-10 border-[0.2rem] border-white rounded-full' metricsText='56 Houses' spanText='Sold Monthly'  />
