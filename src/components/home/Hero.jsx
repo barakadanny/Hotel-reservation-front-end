@@ -16,13 +16,13 @@ import profile4 from '../../imgs/profile/profile4.jpg'
 
 function Hero() {
   return (
-    <section className='bg-green-400'>
+    <section className=''>
         <div className='relative w-full'>
             {/* left side */}
-            <article>
-                <h1>find the place to live your dreams easily here</h1>
-                <p>Everything you need about finding your place to live will be here, where it will be easier for you</p>
-                <div className='relative w-full inline-flex items-center mt-8'>
+            <article className='px-5 pt-24 pb-5 bg-gradient-to-br from-primaryColor to-slate-white'>
+                <h1 className='text-4xl font-extrabold text-textColor mb-5'>Find the place to <br/>Live  <span className='drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)] text-white'>your dreams</span><br/> easily here</h1>
+                <p className='text-paragraphColor'>Everything you need about finding your place to live will be here, where it will be easier for you</p>
+                <div className='relative w-full inline-flex items-center mt-8 mb-8'>
                     <input
                         type="email"
                         name="email"
@@ -31,13 +31,13 @@ function Hero() {
                         className="block w-full px-4 py-4 bg-white text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-full caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 drop-shadow-xl"
                         required
                     />
-                    <button type="submit" className="absolute text-sm top-1 right-1 items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-200 bg-blue-700 border border-transparent rounded-full hover:bg-blue-800 focus:bg-blue-800">
+                    <button type="submit" className="absolute text-sm top-1 right-1 items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-200 bg-primaryColor border border-transparent rounded-full hover:bg-blue-800 focus:bg-blue-800">
                         Search
                     </button>
                 </div>
                 <article>
-                    <p>Our Partners</p>
-                    <ul>
+                    <p className='text-paragraphColor'>Our Partners</p>
+                    <ul className='flex justify-between'>
                         <li>
                             <img src={tripadvisor} alt="tripadvisor" />
                         </li>
