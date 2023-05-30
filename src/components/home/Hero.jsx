@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroImg from '../../imgs/hero.png';
+import { LocationMarkerIcon } from '@heroicons/react/solid'
 
 // partners
 import tripadvisor from '../../imgs/tripadvisor.png';
@@ -23,12 +24,14 @@ function Hero() {
                 <h1 className='text-4xl font-extrabold text-textColor mb-5'>Find the place to <br/>Live  <span className='drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)] text-white'>your dreams</span><br/> easily here</h1>
                 <p className='text-paragraphColor'>Everything you need about finding your place to live will be here, where it will be easier for you</p>
                 <div className='relative w-full inline-flex items-center mt-8 mb-8'>
+                    {/* icon of LocationMarkerIcon */}
+                    <LocationMarkerIcon className='h-6 w-6 text-yellowColor absolute z-10 left-1' />
                     <input
                         type="email"
                         name="email"
                         id="email"
                         placeholder="Location, Hotel"
-                        className="block w-full px-4 py-4 bg-white text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-full caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 drop-shadow-xl"
+                        className="block w-full pl-8 pr-4 py-4 bg-white text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-full caret-primaryColor focus:border-primaryColor focus:ring-1 focus:ring-primaryColor drop-shadow-xl"
                         required
                     />
                     <button type="submit" className="absolute text-sm top-1 right-1 items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-200 bg-primaryColor border border-transparent rounded-full hover:bg-blue-800 focus:bg-blue-800">
